@@ -177,3 +177,93 @@ p {
     right: 10.5%;
     bottom: 39%;
 }
+
+.glitter {
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #948b5a;
+
+    box-shadow:
+        0 0 8px #d1c164,
+        0 0 16px rgba(236,215,94,.8);
+
+    opacity: 0;
+
+    animation: glitter 4s infinite ease-in-out;
+}
+
+
+.glitter-small {
+    width: 4px;
+    height: 4px;
+}
+
+.glitter-large {
+    width: 12px;
+    height: 12px;
+}
+
+.glitter1 {
+    top: 20%;
+    left: 30%;
+    animation-delay: 0s;
+}
+
+.glitter2 {
+    top: 60%;
+    left: 70%;
+    animation-delay: 1.3s;
+}
+
+.glitter3 {
+    top: 40%;
+    left: 80%;
+    animation-delay: 3.2s;
+}
+
+.glitter4 {
+    top: 15%;
+    left: 60%;
+    animation-delay: 2.1s;
+}
+
+.glitter5 {
+    top: 75%;
+    left: 20%;
+    animation-delay: 4.5s;
+}
+
+.glitter6 {
+    top: 35%;
+    left: 15%;
+    animation-delay: 0.8s;
+}
+
+@keyframes glitter {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    40% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.8);
+    }
+
+    60% {
+        opacity: 0.4;
+    }
+
+    70%, 90% {
+        opacity: 0;
+    }
+}
