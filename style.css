@@ -1,0 +1,179 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+
+    background:
+        radial-gradient(
+            circle at top center,
+            #84549F 0%,
+            #472768 45%,
+            #1A133B 100%
+        );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloud {
+    position: absolute;
+    right: 0.1vw;
+    bottom: 0;
+    width: 120vw;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+.sparkles {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50vw;
+}
+
+.sparkle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40vw;
+}
+
+.faded {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    size: 80%;
+    width: 50vw;
+}
+
+.topfade {
+    position: absolute;
+    right: 0;
+    top: 0;
+    size: 80%;
+    width: 50vw;
+}
+
+.starL {
+    position: absolute;
+    left: 5%;
+    bottom: 2%;
+    size: 80%;
+}
+
+.starR {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    size: 50%;
+}
+
+.vectorL {
+    position: absolute;
+    left: 0;
+
+    bottom: 0;
+}
+
+.vectorR {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cat {
+    position: absolute;
+    top: 20%; 
+}
+
+h1 {
+    position: absolute;
+    font-family: "Galindo", cursive;
+    font-size: clamp(4rem, 8vw, 7rem);
+    top: 30%;
+    z-index: 10;
+
+    background: linear-gradient(
+        180deg,
+        #FFF8E6 0%,
+        #FFE9A3 25%,
+        #F4D78A 50%,
+        #D9B45B 75%,
+        #A67C2E 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow:
+        0 2px 4px rgba(0,0,0,0.3);
+}
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.play {
+    position: absolute;
+    bottom: 25%;
+    z-index: 7;
+}
+
+#plbutton {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    border: none;
+    background: url("assets/plbutton.png") center / contain no-repeat;
+    position: absolute;
+    bottom: 30.2%;
+    z-index: 9;
+}
+
+#plbutton:hover {
+    box-shadow:
+        0 0 20px rgba(244,215,138,.6),
+        0 0 40px rgba(244,215,138,.4),
+        0 0 60px rgba(244,215,138,.2);
+
+    transform: scale(1.05);
+}
+
+.line {
+    position: absolute;
+    bottom: 45%;
+    width: 80vw;
+    z-index: 8;
+}
+
+p {
+    font-family: "Funnel Sans", sans-serif;
+    font-weight: 400;
+    font-size: 200%;
+    color: #9D8B5B;
+}
+
+.time {
+    position: absolute;
+    left: 10.5%;
+    bottom: 39%;
+}
+
+.heart {
+    position: absolute;
+    right: 10.5%;
+    bottom: 39%;
+}
